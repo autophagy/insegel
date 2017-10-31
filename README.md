@@ -1,2 +1,0 @@
-# insegel
-RTD theme
