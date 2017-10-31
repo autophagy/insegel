@@ -1,0 +1,21 @@
+{
+  "name": "insegel",
+  "version": "0.1.0",
+  "description": "Sphinx theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Autophagy/insegel.git"
+  },
+  "author": "Mika Naylor (Autophagy)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Autophagy/insegel/issues"
+  },
+  "homepage": "https://github.com/Autophagy/insegel#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "matchdep": "^2.0.0"
+  }
+}
