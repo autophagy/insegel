@@ -14,8 +14,10 @@
   "homepage": "https://github.com/Autophagy/insegel#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-shell": "^2.1.0",
     "matchdep": "^2.0.0"
   }
 }

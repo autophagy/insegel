@@ -35,14 +35,33 @@ module.exports = function(grunt) {
             }
         },
 
+        shell: {
+            build_docs: {
+                command: '.venv/bin/python -msphinx -Ea doc doc/_build/html'
+            }
+        },
+
+        connect: {
+            server: {
+                options: {
+                    port: 8000,
+                    base: 'doc/_build/html'
+                }
+            }
+        },
+
         watch: {
             sass: {
                 files: 'scss/{,*/}*.{scss,sass}',
-                tasks: ['sass:dev']
+                tasks: ['sass:dev', 'shell:build_docs']
+            },
+            html: {
+                files: 'insegel/{,*/}*.{html, py, conf}',
+                tasks: ['shell:build_docs']
             }
         }
     });
 
-    grunt.registerTask('default', ['sass:dev', 'watch']);
+    grunt.registerTask('default', ['sass:dev', 'shell:build_docs', 'connect', 'watch']);
     grunt.registerTask('dist', ['sass:dist']);
 };
