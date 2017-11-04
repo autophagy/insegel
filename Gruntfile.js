@@ -26,8 +26,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 options: {
-                    style: 'compressed',
-                    sourcemap: 'none'
+                    style: 'compressed'
                 },
                 files: {
                     '<%= project.assets %>/css/style.css': '<%= project.css %>'

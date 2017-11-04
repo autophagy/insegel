@@ -1,6 +1,6 @@
-=======
-Insegel
-=======
+===============
+Insegel Example
+===============
 
 Don't let the name scare you. RST (ReStructured Text) is merely a very
 simple yet clever human readable plain text format which can be
