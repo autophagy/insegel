@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
+@import "reset";
+
+@import "variables";
+
+@import "core";
 @import "layout";
 @import "header";
 @import "footer";
+@import "search";
+
+@import "pygments";

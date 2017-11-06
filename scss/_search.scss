@@ -1,0 +1,22 @@
+#search-results {
+    ul.search {
+        padding-left: 0px;
+        list-style-type: none;
+
+        li {
+            margin-bottom: 2em;
+        }
+
+        .context {
+            margin-top: 1em;
+            white-space: pre-line;
+            background-color: $accent-background;
+            color: $accent-foreground;
+            padding: 2em;
+
+            .highlighted {
+                font-weight: 800;
+            }
+        }
+    }
+}

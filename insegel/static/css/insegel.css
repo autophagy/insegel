@@ -1,0 +1,661 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: url("../img/noise.png"), #b3b3b3;
+  background-attachment: fixed;
+  font-family: "Frank Ruhl Libre", serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.35em;
+}
+
+h3 {
+  font-size: 1.15em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+li {
+  display: list-item;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  padding-left: 40px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+pre {
+  font-family: 'Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace';
+  background-color: #DADADA;
+  color: #000000;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+  max-width: 100%;
+}
+
+table thead th {
+  font-weight: bold;
+  text-align: left;
+}
+
+table th, table td {
+  padding: 0.5em;
+}
+
+table tbody tr:nth-of-type(odd) {
+  background-color: #DADADA;
+  color: #000000;
+}
+
+code {
+  white-space: nowrap;
+  max-width: 100%;
+  background: #fff;
+  border: solid 1px #e1e4e5;
+  font-size: 75%;
+  padding: 2px 5px;
+  font-family: 'Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace';
+  color: #E74C3C;
+  overflow-x: auto;
+}
+
+#insegel-container {
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content-container {
+  display: flex;
+  width: 100%;
+}
+
+#main-content-container {
+  flex: 1;
+}
+
+#main-content-container, #side-menu-container {
+  background-color: #F2F2F2;
+}
+
+#main-content {
+  padding: 2em;
+}
+#main-content .figure {
+  text-align: center;
+}
+#main-content h1:first-child {
+  display: none;
+}
+
+#main-content-header {
+  background-color: #2D2D2D;
+  color: #EBEBEB;
+  padding: 2em 2em 0 2em;
+  height: 4em;
+}
+#main-content-header h1 {
+  margin: 0;
+}
+
+#side-menu-container {
+  width: 300px;
+  margin-right: 2em;
+}
+
+#side-menu {
+  padding: 2em;
+}
+
+a.headerlink {
+  display: none;
+  visibility: hidden;
+}
+a.headerlink:after {
+  visibility: visible;
+  content: "⬡";
+  display: inline-block;
+  opacity: 0.6;
+}
+
+h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .headerlink, h5:hover .headerlink, h6:hover .headerlink, dl dt:hover .headerlink, p.caption:hover .headerlink {
+  display: inline-block;
+}
+
+#side-menu .local-toc ul {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  padding-left: 0px;
+  list-style-type: none;
+}
+#side-menu .local-toc ul ul {
+  margin-top: 1em;
+  text-transform: none;
+  font-family: "Frank Ruhl Libre", serif;
+}
+#side-menu .local-toc ul ul a {
+  font-weight: 400;
+}
+
+#side-menu .caption {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+#side-menu ul {
+  margin-bottom: 1em;
+  text-transform: none;
+  font-family: "Frank Ruhl Libre", serif;
+  list-style-type: none;
+  padding-left: 0px;
+}
+#side-menu ul a {
+  font-weight: 400;
+}
+
+#search input[type=text] {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  padding: 2em;
+  height: 4em;
+  box-sizing: border-box;
+  border: none;
+  background-color: #2D2D2D;
+  color: white;
+}
+#search input[type=text]::placeholder {
+  color: #a5a5a5;
+}
+
+.admonition {
+  padding: 2em;
+  margin-bottom: 2em;
+}
+.admonition.note {
+  background-color: #2D2D2D;
+  color: #EBEBEB;
+}
+.admonition.warning {
+  background-color: #FFCCCC;
+}
+
+header {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#search-results ul.search {
+  padding-left: 0px;
+  list-style-type: none;
+}
+#search-results ul.search li {
+  margin-bottom: 2em;
+}
+#search-results ul.search .context {
+  margin-top: 1em;
+  white-space: pre-line;
+  background-color: #DADADA;
+  color: #000000;
+  padding: 2em;
+}
+#search-results ul.search .context .highlighted {
+  font-weight: 800;
+}
+
+.highlight {
+  background-color: #ffffcc;
+}
+
+.c {
+  color: #888888;
+  font-style: italic;
+}
+
+/* Comment */
+.err {
+  background-color: #a848a8;
+}
+
+/* Error */
+.k {
+  color: #2838b0;
+}
+
+/* Keyword */
+.o {
+  color: #666666;
+}
+
+/* Operator */
+.p {
+  color: #888888;
+}
+
+/* Punctuation */
+.ch {
+  color: #287088;
+  font-style: italic;
+}
+
+/* Comment.Hashbang */
+.cm {
+  color: #888888;
+  font-style: italic;
+}
+
+/* Comment.Multiline */
+.cp {
+  color: #289870;
+}
+
+/* Comment.Preproc */
+.cpf {
+  color: #888888;
+  font-style: italic;
+}
+
+/* Comment.PreprocFile */
+.c1 {
+  color: #888888;
+  font-style: italic;
+}
+
+/* Comment.Single */
+.cs {
+  color: #888888;
+  font-style: italic;
+}
+
+/* Comment.Special */
+.gd {
+  color: #c02828;
+}
+
+/* Generic.Deleted */
+.ge {
+  font-style: italic;
+}
+
+/* Generic.Emph */
+.gr {
+  color: #c02828;
+}
+
+/* Generic.Error */
+.gh {
+  color: #666666;
+}
+
+/* Generic.Heading */
+.gi {
+  color: #388038;
+}
+
+/* Generic.Inserted */
+.go {
+  color: #666666;
+}
+
+/* Generic.Output */
+.gp {
+  color: #444444;
+}
+
+/* Generic.Prompt */
+.gs {
+  font-weight: bold;
+}
+
+/* Generic.Strong */
+.gu {
+  color: #444444;
+}
+
+/* Generic.Subheading */
+.gt {
+  color: #2838b0;
+}
+
+/* Generic.Traceback */
+.kc {
+  color: #444444;
+  font-style: italic;
+}
+
+/* Keyword.Constant */
+.kd {
+  color: #2838b0;
+  font-style: italic;
+}
+
+/* Keyword.Declaration */
+.kn {
+  color: #2838b0;
+}
+
+/* Keyword.Namespace */
+.kp {
+  color: #2838b0;
+}
+
+/* Keyword.Pseudo */
+.kr {
+  color: #2838b0;
+}
+
+/* Keyword.Reserved */
+.kt {
+  color: #2838b0;
+  font-style: italic;
+}
+
+/* Keyword.Type */
+.m {
+  color: #444444;
+}
+
+/* Literal.Number */
+.s {
+  color: #b83838;
+}
+
+/* Literal.String */
+.na {
+  color: #388038;
+}
+
+/* Name.Attribute */
+.nb {
+  color: #388038;
+}
+
+/* Name.Builtin */
+.nc {
+  color: #287088;
+}
+
+/* Name.Class */
+.no {
+  color: #b85820;
+}
+
+/* Name.Constant */
+.nd {
+  color: #287088;
+}
+
+/* Name.Decorator */
+.ni {
+  color: #709030;
+}
+
+/* Name.Entity */
+.ne {
+  color: #908828;
+}
+
+/* Name.Exception */
+.nf {
+  color: #785840;
+}
+
+/* Name.Function */
+.nl {
+  color: #289870;
+}
+
+/* Name.Label */
+.nn {
+  color: #289870;
+}
+
+/* Name.Namespace */
+.nt {
+  color: #2838b0;
+}
+
+/* Name.Tag */
+.nv {
+  color: #b04040;
+}
+
+/* Name.Variable */
+.ow {
+  color: #a848a8;
+}
+
+/* Operator.Word */
+.w {
+  color: #a89028;
+}
+
+/* Text.Whitespace */
+.mb {
+  color: #444444;
+}
+
+/* Literal.Number.Bin */
+.mf {
+  color: #444444;
+}
+
+/* Literal.Number.Float */
+.mh {
+  color: #444444;
+}
+
+/* Literal.Number.Hex */
+.mi {
+  color: #444444;
+}
+
+/* Literal.Number.Integer */
+.mo {
+  color: #444444;
+}
+
+/* Literal.Number.Oct */
+.sb {
+  color: #b83838;
+}
+
+/* Literal.String.Backtick */
+.sc {
+  color: #a848a8;
+}
+
+/* Literal.String.Char */
+.sd {
+  color: #b85820;
+  font-style: italic;
+}
+
+/* Literal.String.Doc */
+.s2 {
+  color: #b83838;
+}
+
+/* Literal.String.Double */
+.se {
+  color: #709030;
+}
+
+/* Literal.String.Escape */
+.sh {
+  color: #b83838;
+}
+
+/* Literal.String.Heredoc */
+.si {
+  color: #b83838;
+  text-decoration: underline;
+}
+
+/* Literal.String.Interpol */
+.sx {
+  color: #a848a8;
+}
+
+/* Literal.String.Other */
+.sr {
+  color: #a848a8;
+}
+
+/* Literal.String.Regex */
+.s1 {
+  color: #b83838;
+}
+
+/* Literal.String.Single */
+.ss {
+  color: #b83838;
+}
+
+/* Literal.String.Symbol */
+.bp {
+  color: #388038;
+  font-style: italic;
+}
+
+/* Name.Builtin.Pseudo */
+.vc {
+  color: #b04040;
+}
+
+/* Name.Variable.Class */
+.vg {
+  color: #908828;
+}
+
+/* Name.Variable.Global */
+.vi {
+  color: #b04040;
+}
+
+/* Name.Variable.Instance */
+.il {
+  color: #444444;
+}
+
+/* Literal.Number.Integer.Long */
+
+/*# sourceMappingURL=insegel.css.map */

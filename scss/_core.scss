@@ -1,0 +1,108 @@
+body {
+    background: url('../img/noise.png'), #b3b3b3;
+    background-attachment: fixed;
+    font-family: $primary-font-stack;
+    line-height: 1.5;
+    font-size: 16px
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $secondary-font-stack;
+    font-weight: 300;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.35em;
+}
+
+h3 {
+    font-size: 1.15em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+li {
+    display: list-item;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    padding-left: 40px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+pre {
+    font-family: $monospace-font-stack;
+    background-color: $accent-background;
+    color: $accent-foreground;
+    padding: 2em;
+    margin-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    margin: 0 0 1.5em;
+    width: 100%;
+    max-width: 100%;
+}
+
+table thead th {
+    font-weight: bold;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 0.5em;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background-color: $accent-background;
+    color: $accent-foreground
+}
+
+code {
+    white-space: nowrap;
+    max-width: 100%;
+    background: #fff;
+    border: solid 1px #e1e4e5;
+    font-size: 75%;
+    padding: 2px 5px;
+    font-family: $monospace-font-stack;
+    color: #E74C3C;
+    overflow-x: auto;
+}

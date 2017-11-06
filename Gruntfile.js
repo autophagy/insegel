@@ -11,7 +11,7 @@ module.exports = function(grunt) {
             app: 'insegel',
             assets: '<%= project.app %>/static',
             css: [
-                'scss/style.scss'
+                'scss/insegel.scss'
             ]
         },
 
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    '<%= project.assets %>/css/style.css': '<%= project.css %>'
+                    '<%= project.assets %>/css/insegel.css': '<%= project.css %>'
                 }
             },
             dist: {

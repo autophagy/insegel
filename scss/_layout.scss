@@ -1,0 +1,147 @@
+#insegel-container {
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content-container {
+    display: flex;
+    width: 100%;
+}
+
+#main-content-container {
+    flex: 1;
+}
+
+#main-content-container, #side-menu-container {
+    background-color: $primary-background;
+}
+
+#main-content {
+    padding: 2em;
+
+    .figure {
+        text-align: center;
+    }
+
+    // Hides the first header of the documentation, as it is instead put into
+    // the main-content-header
+    h1:first-child {
+        display: none;
+    }
+}
+
+#main-content-header {
+    background-color: $secondary-background;
+    color: $secondary-foreground;
+    padding: 2em 2em 0 2em;
+    height: 4em;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+#side-menu-container {
+    width: 300px;
+    margin-right: 2em;
+}
+
+#side-menu {
+    padding: 2em;
+}
+
+a.headerlink {
+    display: none;
+    visibility: hidden;
+
+    &:after {
+        visibility: visible;
+        content: "⬡";
+        display: inline-block;
+        opacity: 0.6;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, dl dt, p.caption {
+    &:hover .headerlink {
+        display: inline-block;
+    }
+}
+
+#side-menu .local-toc {
+    ul {
+        text-transform: uppercase;
+        font-family: $secondary-font-stack;
+        font-weight: 300;
+        padding-left: 0px;
+        list-style-type: none;
+
+        ul {
+            margin-top: 1em;
+            text-transform: none;
+            font-family: $primary-font-stack;
+
+            a {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+#side-menu {
+    .caption {
+        text-transform: uppercase;
+        font-family: $secondary-font-stack;
+        font-weight: 300;
+        list-style-type: none;
+        margin-bottom: 0px;
+    }
+
+    ul {
+        margin-bottom: 1em;
+        text-transform: none;
+        font-family: $primary-font-stack;
+        list-style-type: none;
+        padding-left: 0px;
+
+        a {
+           font-weight: 400;
+        }
+    }
+}
+
+#search {
+    input[type=text] {
+        width: 100%;
+        font-family: $secondary-font-stack;
+        font-weight: 300;
+        font-size: 1.5em;
+        padding: 2em;
+        height: 4em;
+        box-sizing: border-box;
+        border: none;
+        background-color: #2D2D2D;
+        color: white;
+
+        &::placeholder {
+            color: #a5a5a5;
+        }
+    }
+}
+
+.admonition {
+    padding: 2em;
+    margin-bottom: 2em;
+
+    &.note {
+        background-color: $secondary-background;
+        color: $secondary-foreground;
+    }
+
+    &.warning {
+        background-color: $warning-colour;
+    }
+}
