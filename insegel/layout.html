@@ -7,6 +7,9 @@
   <title>{{ project }} :: {{ title|striptags|e }}{{ titlesuffix }}</title>
   {% endblock %}
 
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ pathto('_static/img/favicon-32x32.png', 1) }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ pathto('_static/img/favicon-16x16.png', 1) }}">
+
   {%- if hasdoc('genindex') %}
         <link rel="index" title="{{ _('Index') }}"
               href="{{ pathto('genindex') }}"/>
