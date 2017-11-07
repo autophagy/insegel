@@ -47,10 +47,21 @@
 #side-menu-container {
     width: 300px;
     margin-right: 2em;
+    position: relative;
+
+    #rtd-credit {
+        background-color: $accent-background;
+        color: $accent-foreground;
+        padding: 2em;
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 #side-menu {
     padding: 2em;
+    // Margin needed so that the RTD credits do not overlap
+    margin-bottom: 5em;
 }
 
 a.headerlink {
@@ -144,4 +155,11 @@ h1, h2, h3, h4, h5, h6, dl dt, p.caption {
     &.warning {
         background-color: $warning-colour;
     }
+}
+
+// Hides the footer injected by RTD, which we then insert into a side menu bar
+// within menu.html
+
+.injected {
+    display: none;
 }
