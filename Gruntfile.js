@@ -29,7 +29,7 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    '<%= project.assets %>/css/style.css': '<%= project.css %>'
+                    '<%= project.assets %>/css/insegel.css': '<%= project.css %>'
                 }
             }
         },
