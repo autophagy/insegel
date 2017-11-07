@@ -20,7 +20,7 @@
                 //
             {% endif %}
             <span class="footer-element">
-                <a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/{{commit}}">{{ commit }}</a>
+                <a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/commit/{{commit}}">{{ commit }}</a>
             </span>
             {% set show_sep = True %}
         {% endif %}
