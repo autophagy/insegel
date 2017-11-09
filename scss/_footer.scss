@@ -14,9 +14,10 @@ footer {
         display: none;
         opacity: 1;
         font-size: 32px;
+        cursor: pointer;
 
         &.toggled {
-            opacity: 0.5;
+            color: $accent-background;
         }
     }
 
