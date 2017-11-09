@@ -43,6 +43,15 @@
 
     <div id="content-container">
 
+      <div id="main-content-container">
+        <div id="main-content-header">
+          <h1> {{ project }} : : {{ title }} </h1>
+        </div>
+        <div id="main-content">
+          {% block body %}{% endblock %}
+        </div>
+      </div>
+
       <div id="side-menu-container">
 
         {% include "searchinput.html" %}
@@ -59,15 +68,6 @@
           </div>
         {% endif %}
 
-      </div>
-    
-      <div id="main-content-container">
-        <div id="main-content-header">
-          <h1> {{ project }} : : {{ title }} </h1>
-        </div>
-        <div id="main-content">
-          {% block body %}{% endblock %}
-        </div>
       </div>
 
     </div>

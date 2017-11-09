@@ -3,7 +3,12 @@ body {
     background-attachment: fixed;
     font-family: $primary-font-stack;
     line-height: 1.5;
-    font-size: 16px
+    font-size: 16px;
+    min-width: 425px;
+
+    @media screen and (max-width: $max-width-small) {
+        background: $primary-background;
+    }
 }
 
 h1, h2, h3, h4, h5 {

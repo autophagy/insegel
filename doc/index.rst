@@ -7,8 +7,8 @@ documentation. Though it can be deployed anywhere, the theme is specifically
 made to be deployed on `ReadTheDocs`_. This theme is meant to match the 
 aesthetic of my portfolio `Hrǽw`_, and so is not particularily customisable.
 
-It is still a work in progress and thus lacks features such as tablet/mobile 
-specific styling, version navigation, toc tree styling, etc. 
+It is still a work in progress and thus lacks features such as version
+navigation, toc tree styling, etc.
 
 Contents
 --------

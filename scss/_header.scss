@@ -1,4 +1,8 @@
 header {
     padding-top: 2em;
     padding-bottom: 2em;
+
+    @media screen and (max-width: $max-width-small) {
+        text-align: center;
+    }
 }

@@ -3,4 +3,34 @@ footer {
     justify-content: space-between;
     margin-top: 2em;
     margin-bottom: 2em;
+
+    #footer-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    a#menu-toggle {
+        display: none;
+        opacity: 1;
+        font-size: 32px;
+
+        &.toggled {
+            opacity: 0.5;
+        }
+    }
+
+    @media screen and (max-width: $max-width-small) {
+        padding: 2em;
+        align-items: center;
+
+        #footer-info {
+            display: block;
+        }
+
+        a#menu-toggle {
+            display: block;
+        }
+    }
+
 }

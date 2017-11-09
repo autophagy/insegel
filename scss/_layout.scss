@@ -4,11 +4,20 @@
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: $max-width-small) {
+        padding: 0;
+    }
 }
 
 #content-container {
     display: flex;
     width: 100%;
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: $max-width-small) {
+        display: block;
+    }
 }
 
 #main-content-container {
@@ -36,8 +45,7 @@
 #main-content-header {
     background-color: $secondary-background;
     color: $secondary-foreground;
-    padding: 2em 2em 0 2em;
-    height: 4em;
+    padding: 2em;
 
     h1 {
         margin: 0;
@@ -49,6 +57,12 @@
     margin-right: 2em;
     position: relative;
 
+    #side-menu {
+        padding: 2em;
+        // Margin needed so that the RTD credits do not overlap
+        margin-bottom: 5em;
+    }
+
     #rtd-credit {
         background-color: $accent-background;
         color: $accent-foreground;
@@ -56,13 +70,27 @@
         position: absolute;
         bottom: 0;
     }
+
+    @media screen and (max-width: $max-width-medium) {
+        width: 250px;
+    }
+
+    @media screen and (max-width: $max-width-small) {
+        margin-right: 0;
+        width: 100%;
+        display: none;
+
+        #side-menu {
+            margin-bottom: 0;
+        }
+
+        #rtd-credit {
+            position: relative;
+        }
+    }
 }
 
-#side-menu {
-    padding: 2em;
-    // Margin needed so that the RTD credits do not overlap
-    margin-bottom: 5em;
-}
+
 
 a.headerlink {
     display: none;
@@ -125,16 +153,18 @@ h1, h2, h3, h4, h5, h6, dl dt, p.caption {
 }
 
 #search {
+
+    background-color: $secondary-background;
+    padding: 2em;
+
     input[type=text] {
         width: 100%;
         font-family: $secondary-font-stack;
         font-weight: 300;
         font-size: 1.5em;
-        padding: 2em;
-        height: 4em;
         box-sizing: border-box;
         border: none;
-        background-color: #2D2D2D;
+        background-color: $secondary-background;
         color: white;
 
         &::placeholder {
