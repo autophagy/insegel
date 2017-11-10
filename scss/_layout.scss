@@ -199,8 +199,17 @@ h1, h2, h3, h4, h5, h6, dl dt, p.caption {
     display: none;
 }
 
-.toctree-wrapper .caption-text {
+.toctree-wrapper {
+
+    margin-bottom: 1em;
+
+    .caption-text {
     text-transform: uppercase;
     font-family: $secondary-font-stack;
     font-weight: 300;
+    }
+}
+
+.figure {
+    margin-bottom: 1em;
 }
