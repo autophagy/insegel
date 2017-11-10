@@ -198,3 +198,9 @@ h1, h2, h3, h4, h5, h6, dl dt, p.caption {
 .injected {
     display: none;
 }
+
+.toctree-wrapper .caption-text {
+    text-transform: uppercase;
+    font-family: $secondary-font-stack;
+    font-weight: 300;
+}
