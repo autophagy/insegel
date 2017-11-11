@@ -1,5 +1,8 @@
 import os
 
+__version__ = '0.1.0'
+__version_full__ = __version__
+
 def get_path():
     """
     Shortcut for users whose theme is next to their conf.py.
@@ -9,7 +12,7 @@ def get_path():
 
 
 def update_context(app, pagename, templatename, context, doctree):
-    context['insegel_version'] = '0.0.1'
+    context['insegel_version'] = __version_full__
 
 def setup(app):
     # add_html_theme is new in Sphinx 1.6+

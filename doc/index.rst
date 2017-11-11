@@ -20,5 +20,13 @@ Contents
    installation
    configuration
 
+.. _release_notes:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Release Notes
+
+   release_notes/index
+
 .. _ReadTheDocs: http://readthedocs.org/
 .. _Hrǽw: https://github.com/Autophagy/hraew

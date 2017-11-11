@@ -1,7 +1,7 @@
 {
   "name": "insegel",
   "version": "0.1.0",
-  "description": "Sphinx theme",
+  "description": "Clean, minimalist Sphinx theme for deploying on ReadTheDocs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Autophagy/insegel.git"

@@ -1,14 +1,15 @@
 from io import open
 from setuptools import setup
+from insegel import __version__
 
 setup(
     name='insegel',
-    version='0.0.1-alpha',
+    version=__version__,
     url='https://github.com/autophagy/insegel',
     license='MIT',
     author='Mika Naylor (Autophagy)',
     author_email='mail@autophagy.io',
-    description='Theme for Sphinx',
+    description='Clean, minimalist Sphinx theme for deploying on ReadTheDocs',
     long_description=open('README.rst', encoding='utf-8').read(),
     zip_safe=False,
     packages=['insegel'],
@@ -20,7 +21,6 @@ setup(
         'static/img/*.*'
     ]},
     include_package_data=True,
-    # See http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package
     entry_points = {
         'sphinx.html_themes': [
             'insegel = insegel',

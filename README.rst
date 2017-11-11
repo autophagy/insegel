@@ -6,6 +6,14 @@ Insegel
     :target: http://insegel.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
+.. image:: https://img.shields.io/pypi/v/insegel.svg
+   :target: https://pypi.python.org/pypi/insegel/
+   :alt: Pypi Version
+
+.. image:: https://img.shields.io/pypi/pyversions/insegel.svg
+   :target: https://pypi.python.org/pypi/insegel/
+   :alt: Python Version
+
 Insegel is a theme for `Sphinx`_, intended to unify my project documentation's
 theme with that of `Hrǽw`_. The theme's documentation is available on
 `ReadTheDocs`_.
