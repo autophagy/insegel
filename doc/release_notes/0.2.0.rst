@@ -8,5 +8,6 @@
   the French Revolutionary calendar.
 - Added theme option to disable Wending date display, which then uses regular
   Gregorian dates.
+- Changed monospace font stack to use Inconsolata.
 
 .. _Datárum: https://github.com/Autophagy/datarum
