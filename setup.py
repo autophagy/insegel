@@ -21,6 +21,9 @@ setup(
         'static/img/*.*'
     ]},
     include_package_data=True,
+    install_requires=[
+        'datarum'
+    ],
     entry_points = {
         'sphinx.html_themes': [
             'insegel = insegel',

@@ -11,9 +11,6 @@ project = u'Insegel'
 exclude_patterns = ['_build']
 
 html_theme = 'insegel'
-html_theme_options = {
-
-}
 
 html_last_updated_fmt = '%d %b %Y'
 

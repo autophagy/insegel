@@ -31,7 +31,11 @@
                     //
                 {% endif %}
                 <span class="footer-element">
-                    {{ last_updated }}
+                    {% if theme_wending_last_updated %}
+                        {{ last_updated | wending }}
+                    {% else %}
+                        {{ last_updated }}
+                    {% endif %}
                 </span>
                 {% set show_sep = True %}
             {% endif %}

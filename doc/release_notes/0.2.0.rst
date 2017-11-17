@@ -1,0 +1,12 @@
+==================
+0.2.0 (Unreleased)
+==================
+
+- Changed the logo link from ``/`` to the ``master_doc`` setting.
+- Updated the ``last_updated`` footer element to use the `Datárum`_ library to 
+  render documentation updated dates in the Wending format, a custom variant on
+  the French Revolutionary calendar.
+- Added theme option to disable Wending date display, which then uses regular
+  Gregorian dates.
+
+.. _Datárum: https://github.com/Autophagy/datarum

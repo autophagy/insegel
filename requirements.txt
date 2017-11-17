@@ -1,3 +1,4 @@
 Sphinx==1.6.5
 sphinxprettysearchresults==0.3.2
 -e .
+https://github.com/Autophagy/datarum/archive/master.zip
