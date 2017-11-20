@@ -2,7 +2,7 @@ import os
 import datarum
 from datetime import datetime
 
-__version__ = '0.1.0'
+__version__ = '0.2.0'
 __version_full__ = __version__
 
 def get_path():
@@ -33,5 +33,5 @@ def setup(app):
         app.add_html_theme('insegel', theme_path)
     app.connect('html-page-context', update_context)
     app.connect('builder-inited', add_jinja_filters)
-    return {'version': '0.0.1',
+    return {'version': '0.2.0',
             'parallel_read_safe': True}
