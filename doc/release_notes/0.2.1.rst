@@ -1,0 +1,5 @@
+==================
+0.2.1 (Unreleased)
+==================
+
+- Removed min-width from body, so that it scales properly on mobile resolutions.
