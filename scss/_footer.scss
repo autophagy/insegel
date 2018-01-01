@@ -21,6 +21,22 @@ footer {
         }
     }
 
+    ul#build-details {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-right: 0.25em;
+
+            &:not(:last-child):after {
+              content: " // ";
+              margin-left: 0;
+            }
+        }
+    }
+
     @media screen and (max-width: $max-width-small) {
         padding: 2em;
         align-items: center;
