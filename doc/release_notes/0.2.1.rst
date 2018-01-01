@@ -1,5 +1,9 @@
-==================
-0.2.1 (Unreleased)
-==================
+=====
+0.2.1
+=====
+
+Release Date :: 12 Snáw 226 // 1 Jan 2018
 
 - Removed min-width from body, so that it scales properly on mobile resolutions.
+- Changed the default Autophagy sigil.
+- Refactored the footer build detail seperation.
