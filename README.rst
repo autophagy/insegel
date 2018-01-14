@@ -22,7 +22,7 @@ Insegel is a theme for `Sphinx`_, intended to unify my project documentation's
 theme with that of `Hrǽw`_. The theme's documentation is available on
 `ReadTheDocs`_.
 
-.. image:: doc/_static/screenshot.png
+.. image:: seonu/_static/screenshot.png
     :alt: aerende
     :align: center
 
