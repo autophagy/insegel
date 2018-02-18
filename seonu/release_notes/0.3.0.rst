@@ -1,0 +1,8 @@
+=====
+0.3.0
+=====
+
+Release Date :: 30 Regn 226 // 18 Feb 2018
+
+- Updated the favicon to new Autophagy sigil.
+- Fixed datarum version to 0.3.0.

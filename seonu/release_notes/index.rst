@@ -7,6 +7,14 @@ Information about each Insegel release.
 0.X
 ===
 
+0.3.X
+-----
+
+.. toctree::
+    :maxdepth: 1
+
+    0.3.0
+
 0.2.X
 -----
 
