@@ -21,7 +21,7 @@ def update_context(app, pagename, templatename, context, doctree):
 # Requires html_last_updated_fmt = '%d %b %Y'
 def date_to_wending(date_string):
     dt = datetime.strptime(date_string, '%d %b %Y')
-    return datarum.from_date(dt).formatted()
+    return datarum.from_date(dt).strftime('{daeg} {month} {gere}')
 
 def add_jinja_filters(app):
     app.builder.templates.environment.filters['wending'] = date_to_wending
