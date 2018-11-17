@@ -1,9 +1,8 @@
 body {
-    background: url('../img/noise.png'), #b3b3b3;
-    background-attachment: fixed;
+    background: $primary-background;
     font-family: $primary-font-stack;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 18px;
 
     @media screen and (max-width: $max-width-small) {
         background: $primary-background;
@@ -11,28 +10,37 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: $secondary-font-stack;
     font-weight: 300;
     margin-bottom: 1em;
     margin-top: 1em;
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 1.35em;
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: 1.15em;
+    font-size: 1.35em;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    font-weight: 700;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.25s;
+
+    &.headerlink {
+        border-bottom: 0;
+    }
+}
+
+a:hover:not(.headerlink) {
+    border-bottom: 2px solid $primary-foreground;
 }
 
 p {
@@ -99,14 +107,15 @@ table tbody tr:nth-of-type(odd) {
     color: $accent-foreground
 }
 
-code {
+pre code {
     white-space: nowrap;
-    max-width: 100%;
-    background: #fff;
-    border: solid 1px #e1e4e5;
-    font-size: 75%;
-    padding: 2px 5px;
-    font-family: $monospace-font-stack;
-    color: #E74C3C;
     overflow-x: auto;
+}
+
+code {
+    max-width: 100%;
+    padding: 2px;
+    font-family: $monospace-font-stack;
+    background-color: $accent-background;
+    color: $accent-foreground;
 }

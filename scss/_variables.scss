@@ -1,9 +1,8 @@
-$primary-font-stack: 'Frank Ruhl Libre', serif;
-$secondary-font-stack: 'Open Sans', sans-serif;
+$primary-font-stack: 'IBM Plex Sans', serif;
 $monospace-font-stack: 'Inconsolata', monospace;
 
 $primary-background: #F2F2F2;
-$primary-foreground: #000000;
+$primary-foreground: #2D2D2D;
 
 $secondary-background: #2D2D2D;
 $secondary-foreground: #EBEBEB;
@@ -11,7 +10,8 @@ $secondary-foreground: #EBEBEB;
 $accent-background: #DADADA;
 $accent-foreground: $primary-foreground;
 
-$warning-colour: #FFCCCC;
+$warning-colour: #CD4949;
+$attention-colour: #49CDAC;
 
 $max-width-medium: 1000px;
 $max-width-small: 880px;

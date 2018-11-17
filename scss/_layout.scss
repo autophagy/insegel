@@ -43,9 +43,7 @@
 }
 
 #main-content-header {
-    background-color: $secondary-background;
-    color: $secondary-foreground;
-    padding: 2em;
+    padding: 2em 2em 0 2em;
 
     h1 {
         margin: 0;
@@ -64,8 +62,6 @@
     }
 
     #rtd-credit {
-        background-color: $accent-background;
-        color: $accent-foreground;
         padding: 2em;
         position: absolute;
         bottom: 0;
@@ -118,7 +114,6 @@ h1, h2, h3, h4, h5, h6, dl dt, p.caption {
 #side-menu .local-toc {
     ul {
         text-transform: uppercase;
-        font-family: $secondary-font-stack;
         font-weight: 300;
         padding-left: 0px;
         list-style-type: none;
@@ -137,8 +132,7 @@ h1, h2, h3, h4, h5, h6, dl dt, p.caption {
 
 #side-menu {
     .caption {
-        text-transform: uppercase;
-        font-family: $secondary-font-stack;
+        opacity: 0.5;
         font-weight: 300;
         list-style-type: none;
         margin-bottom: 0px;
@@ -147,33 +141,27 @@ h1, h2, h3, h4, h5, h6, dl dt, p.caption {
     ul {
         margin-bottom: 1em;
         text-transform: none;
-        font-family: $primary-font-stack;
         list-style-type: none;
         padding-left: 0px;
-
-        a {
-           font-weight: 400;
-        }
     }
 }
 
 #search {
-
-    background-color: $secondary-background;
     padding: 2em;
 
     input[type=text] {
         width: 100%;
-        font-family: $secondary-font-stack;
         font-weight: 300;
-        font-size: 1.5em;
+        font-size: 2em;
         box-sizing: border-box;
         border: none;
-        background-color: $secondary-background;
-        color: white;
+        background-color: $primary-background;
+        color: $primary-foreground;
+        font-family: $primary-font-stack;
 
         &::placeholder {
             color: #a5a5a5;
+            font-weight: 300;
         }
     }
 }
@@ -181,14 +169,21 @@ h1, h2, h3, h4, h5, h6, dl dt, p.caption {
 .admonition {
     padding: 2em;
     margin-bottom: 2em;
+    background-color: $secondary-background;
+    color: $secondary-foreground;
 
-    &.note {
-        background-color: $secondary-background;
-        color: $secondary-foreground;
+    .admonition-title {
+        font-weight: 500;
     }
 
-    &.warning {
+    &.warning, &.caution, &.danger, &.error {
         background-color: $warning-colour;
+        color: $primary-foreground;
+    }
+
+    &.attention, &.important {
+        background-color: $attention-colour;
+        color: $primary-foreground;
     }
 }
 
@@ -204,9 +199,8 @@ h1, h2, h3, h4, h5, h6, dl dt, p.caption {
     margin-bottom: 1em;
 
     .caption-text {
-    text-transform: uppercase;
-    font-family: $secondary-font-stack;
     font-weight: 300;
+    opacity: 0.5;
     }
 }
 

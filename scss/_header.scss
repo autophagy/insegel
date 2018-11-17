@@ -1,8 +1,34 @@
 header {
     padding-top: 2em;
-    padding-bottom: 2em;
+    display: flex;
+
+    #logo-container {
+        width: 300px;
+        padding-left: 2em;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: $max-width-medium) {
+            width: 250px;
+        }
+
+        @media screen and (max-width: $max-width-small) {
+            width: 100%;
+            padding: 0;
+            display: block;
+        }
+
+        img {
+            height: 60px;
+        }
+    }
+
+    #project-container {
+        padding: 0em 2em;
+    }
 
     @media screen and (max-width: $max-width-small) {
         text-align: center;
+        display: block;
     }
 }
