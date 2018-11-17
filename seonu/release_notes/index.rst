@@ -4,6 +4,14 @@ Release Notes
 
 Information about each Insegel release.
 
+1.X
+===
+
+.. toctree::
+    :maxdepth: 1
+
+    1.0.0
+
 0.X
 ===
 

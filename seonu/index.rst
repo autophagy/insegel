@@ -2,13 +2,9 @@
 Overview
 ========
 
-Insegel is a theme for Sphinx, intended to be used for my personal projects'
-documentation. Though it can be deployed anywhere, the theme is specifically 
-made to be deployed on `ReadTheDocs`_. This theme is meant to match the 
-aesthetic of my portfolio `Hrǽw`_, and so is not particularily customisable.
+Insegel is a theme for `Sphinx`_, a Python based documentation engine. The theme itself can be deployed anywhere, but has specific enhancements for hosting on `ReadTheDocs`_.
 
-It is still a work in progress and thus lacks features such as version
-navigation, toc tree styling, etc.
+It provides a mobile-friendly, monochrome 2 column layout with an emphasis on typographical legibility and consistency. It also, optionally, integrates `Datárum`_ for displaying the last built date of the documentation.
 
 Contents
 --------
@@ -24,9 +20,10 @@ Contents
 
 .. toctree::
    :maxdepth: 2
-   :caption: Release Notes
+   :caption: Appendix
 
    release_notes/index
 
+.. _Sphinx: http://www.sphinx-doc.org/en/stable/
 .. _ReadTheDocs: http://readthedocs.org/
-.. _Hrǽw: https://github.com/Autophagy/hraew
+.. _Datárum: https://hraew.autophagy.io/datarum
