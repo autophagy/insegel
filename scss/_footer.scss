@@ -1,8 +1,7 @@
 footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 2em;
 
     #footer-info {
         display: flex;
@@ -38,7 +37,6 @@ footer {
     }
 
     @media screen and (max-width: $max-width-small) {
-        padding: 2em;
         align-items: center;
 
         #footer-info {

@@ -396,8 +396,7 @@ header #project-container {
 footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin: 2em;
 }
 footer #footer-info {
   display: flex;
@@ -428,7 +427,6 @@ footer ul#build-details li:not(:last-child):after {
 }
 @media screen and (max-width: 880px) {
   footer {
-    padding: 2em;
     align-items: center;
   }
   footer #footer-info {
