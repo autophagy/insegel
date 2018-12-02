@@ -176,6 +176,11 @@ code {
   color: #2D2D2D;
 }
 
+table tbody tr:nth-of-type(odd) code {
+  background-color: #F2F2F2;
+  color: #2D2D2D;
+}
+
 #insegel-container {
   padding-left: 1em;
   padding-right: 1em;
