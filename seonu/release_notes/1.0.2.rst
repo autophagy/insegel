@@ -1,0 +1,7 @@
+=====
+1.0.2
+=====
+
+Release Date :: 12 Forst 227 // 2 Dec 2018
+
+- Added a ``<code>`` background colour for odd table rows, so that they're distinguishable.

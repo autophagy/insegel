@@ -2,7 +2,7 @@ import os
 import datarum
 from datetime import datetime
 
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 __version_full__ = __version__
 
 def get_path():
