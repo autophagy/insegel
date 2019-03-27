@@ -5,12 +5,12 @@ Installation
 Via the Repo
 ============
 
-To use the Insegel theme from the Github repo, you can add::
+To use the Insegel theme from the Github repo, you can install via pip::
 
- -e git+git@github.com:Autophagy/insegel.git#egg=insegel
+pip install insegel
 
-to your documentations pip requirements file. You can then set Sphinx to use
-the theme via::
+Or, you can add it to your documentations' pip requirements file.
+You can then set Sphinx to use the theme via::
 
   html_theme = 'insegel'
 
