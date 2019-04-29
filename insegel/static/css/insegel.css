@@ -481,6 +481,7 @@ dl:not(.docutils) dt code {
   background: #2D2D2D;
   color: #EBEBEB;
   font-weight: bold;
+  padding: 0px;
 }
 dl:not(.docutils) dl dt {
   background: #DADADA;
