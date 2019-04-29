@@ -460,6 +460,38 @@ footer ul#build-details li:not(:last-child):after {
   font-weight: 800;
 }
 
+dl:not(.docutils) dd {
+  margin-left: 2em;
+}
+dl:not(.docutils) dd dl {
+  margin-bottom: 1em;
+}
+dl:not(.docutils) dt {
+  background: #2D2D2D;
+  color: #EBEBEB;
+  padding: 0.5em;
+  padding-right: 0.75em;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+dl:not(.docutils) dt .property {
+  margin-right: 0.5em;
+}
+dl:not(.docutils) dt code {
+  background: #2D2D2D;
+  color: #EBEBEB;
+  font-weight: bold;
+}
+dl:not(.docutils) dl dt {
+  background: #DADADA;
+  color: #2D2D2D;
+  border-left: 0.25em solid #2D2D2D;
+}
+dl:not(.docutils) dl dt code {
+  background: #DADADA;
+  color: #2D2D2D;
+}
+
 .c {
   font-style: italic;
 }

@@ -1,0 +1,38 @@
+dl:not(.docutils) {
+    dd {
+        margin-left: 2em;
+
+        dl {
+            margin-bottom: 1em;
+        }
+    }
+    dt {
+        background: $secondary-background;
+        color: $secondary-foreground;
+        padding: 0.5em;
+        padding-right: 0.75em;
+        margin-bottom: 1em;
+        display: inline-block;
+
+        .property {
+            margin-right: 0.5em;
+        }
+
+        code {
+            background: $secondary-background;
+            color: $secondary-foreground;
+            font-weight: bold;
+        }
+    }
+
+    dl dt {
+        background: $accent-background;
+        color: $accent-foreground;
+        border-left: 0.25em solid $accent-foreground;
+
+        code {
+            background: $accent-background;
+            color: $accent-foreground;
+        }
+    }
+}
