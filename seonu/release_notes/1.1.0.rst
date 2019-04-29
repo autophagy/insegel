@@ -1,0 +1,8 @@
+=====
+1.1.0
+=====
+
+Release Date :: 10 Blóstm 227 // 29 Apr 2019
+
+- Added styling for Sphinx's autodoc/autoclass extension.
+- Added support for changing the logo using the ``html_logo`` option.
