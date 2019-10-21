@@ -2,7 +2,7 @@
 Insegel
 =======
 
-.. image:: http://scieldas.autophagy.io/rtd/insegel.png
+.. image:: http://scieldas.autophagy.io/rtd/build/insegel.png
     :target: http://insegel.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
@@ -14,7 +14,7 @@ Insegel
    :target: https://pypi.python.org/pypi/insegel/
    :alt: Python Version
 
-.. image:: http://scieldas.autophagy.io/licenses/MIT.png
+.. image:: http://scieldas.autophagy.io/misc/licenses/mit.png
    :target: LICENSE
    :alt: MIT License
 
