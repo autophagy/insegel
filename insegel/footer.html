@@ -29,6 +29,13 @@
                 </li>
             {% endif %}
         </ul>
+
+        {% if copyright %}
+            <div id="copyright">
+                &copy; {{ copyright }}
+            </div>
+        {% endif %}
+
         <div id="credit">
             created with <a href="http://sphinx-doc.org/">Sphinx</a> and <a href="https://github.com/Autophagy/insegel">Insegel</a>
 
