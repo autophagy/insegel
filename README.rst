@@ -26,6 +26,20 @@ theme with that of `Hrǽw`_. The theme's documentation is available on
     :alt: aerende
     :align: center
 
+Installation
+============
+
+To use the Insegel theme, install it via pip::
+
+   pip install insegel
+
+Or, you can add it to your Sphinx project's requirements files.
+You can then set Sphinx to use the theme via::
+
+   html_theme = 'insegel'
+
+within your documentation's ``conf.py`` file.
+
 
 .. _Sphinx: http://www.sphinx-doc.org/en/stable/
 .. _Hrǽw: https://github.com/Autophagy/hraew
