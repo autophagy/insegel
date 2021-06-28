@@ -168,6 +168,10 @@ pre code {
   overflow-x: auto;
 }
 
+div.highlight > pre {
+  white-space: pre-wrap;
+}
+
 code {
   max-width: 100%;
   padding: 2px;
