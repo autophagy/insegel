@@ -1,10 +1,9 @@
 from io import open
 from setuptools import setup
-from insegel import __version__
 
 setup(
     name='insegel',
-    version=__version__,
+    version='1.2.0',
     url='https://github.com/autophagy/insegel',
     license='MIT',
     author='Mika Naylor (Autophagy)',
