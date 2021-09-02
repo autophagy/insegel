@@ -19,3 +19,7 @@ releases_github_path = 'autophagy/insegel'
 releases_unstable_prehistory = True
 
 extensions = ['sphinx.ext.autodoc']
+
+html_theme_options = {
+    'wending_last_updated': True
+}
