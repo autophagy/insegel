@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6, dl dt, p.caption {
 
 #side-menu {
     .caption {
-        opacity: 0.5;
+        opacity: 0.7;
         font-weight: 300;
         list-style-type: none;
         margin-bottom: 0px;
@@ -143,6 +143,17 @@ h1, h2, h3, h4, h5, h6, dl dt, p.caption {
         text-transform: none;
         list-style-type: none;
         padding-left: 0px;
+    }
+
+    .toctree-l2 > a {
+        font-weight: normal;
+        margin-left: 1em;
+    }
+
+    .toctree-l3 > a, .toctree-l4 > a, .toctree-l5 > a {
+        font-weight: normal;
+        opacity: 0.7;
+        margin-left: 2em;
     }
 }
 
