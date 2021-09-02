@@ -22,5 +22,5 @@ extensions = ['sphinx.ext.autodoc']
 
 html_theme_options = {
     'wending_last_updated': True,
-    'navigation_depth': 1
+    'navigation_depth': 2
 }
