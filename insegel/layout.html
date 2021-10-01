@@ -12,31 +12,23 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ pathto('_static/img/favicon-16x16.png', 1) }}">
 
   {%- if hasdoc('genindex') %}
-        <link rel="index" title="{{ _('Index') }}"
-              href="{{ pathto('genindex') }}"/>
-    {%- endif %}
+  <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}"/>
+  {%- endif %}
 
   <link rel="stylesheet" href="{{ pathto('_static/css/insegel.css', 1) }}"/>
   <link rel="stylesheet" href="{{ pathto('_static/css/custom.css', 1) }}"/>
 
-  <script type="text/javascript">
-    var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:'{{ url_root }}',
-        VERSION:'{{ release|e }}',
-        LANGUAGE:'{{ language }}',
-        COLLAPSE_INDEX:false,
-        FILE_SUFFIX:'{{ '' if no_search_suffix else file_suffix }}',
-        HAS_SOURCE:  {{ has_source|lower }},
-        SOURCELINK_SUFFIX: '{{ sourcelink_suffix }}'
-    };
-  </script>
+  <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
 
-  {%- for scriptfile in script_files %}
-    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
-  {%- endfor %}
+  {%- block scripts %}
+    {%- for scriptfile in script_files %}
+      <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endfor %}
+  {% endblock %}
 
   <script src="https://email.tl.fortawesome.com/c/eJxNjUEOgyAQAF8jR7Kw6wIHDh7sP1Cw2mgxgmn6-3JsMqc5zEQfE8dkxOY1KKMUOI3ACFKRJpSW2AAp7ontYIaxI6i7XPJVwyeVfCQ550Os3jLrGSNOLgbdAy6s0PBk2TFNjEbsfq31LB0OnX407pJa5v2faRadwSW63mn5KuLyR9j2tgx3zecanl-55R_-jjPs"></script>
 
+  {%- block extrahead %} {% endblock %}
 </head>
 
 <body>
@@ -61,7 +53,7 @@
         <div id="main-content-header">
           <h1>{{ title }}</h1>
         </div>
-        <div id="main-content">
+        <div id="main-content" role="main">
           {% block body %}{% endblock %}
         </div>
       </div>

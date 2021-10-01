@@ -3,10 +3,13 @@
 {% set title = _('Search') %}
 {% set script_files = script_files + ['_static/searchtools.js'] %}
 
-{% block footer %}
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("{{ pathto('searchindex.js', 1) }}"); });
-  </script>
+{%- block scripts %}
+    {{ super() }}
+    <script src="{{ pathto('_static/language_data.js', 1) }}"></script>
+{%- endblock %}
+
+{% block extrahead %}
+  <script src="{{ pathto('searchindex.js', 1) }}" defer></script>
   {{ super() }}
 {% endblock %}
 
@@ -15,7 +18,7 @@
     <p>Documentation searching relies on Javascript. Please enable it.</p>
   </noscript>
 
-    {% if search_performed %}
+  {% if search_performed %}
     <h2>{{ _('Search Results') }}</h2>
     {% if not search_results %}
       <p>{{ _('Your search did not match any results.') }}</p>
