@@ -21,3 +21,5 @@ releases_unstable_prehistory = True
 extensions = ["sphinx.ext.autodoc"]
 
 html_theme_options = {"navigation_depth": 2}
+
+html_logo = "_static/logo.svg"

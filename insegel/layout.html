@@ -38,12 +38,15 @@
           {% if logo %}
           <a href="{{ pathto(master_doc) }}"><img src="{{ pathto('_static/' + logo, 1) }}"></a>
           {% else %}
-          <a href="{{ pathto(master_doc) }}"><img src="{{ pathto('_static/img/logo.svg', 1) }}"></a>
+          <h1>{{ project }}</h1>
           {% endif %}
-
       </div>
       <div id="project-container">
+        {% if logo %}
         <h1>{{ project }} Documentation</h1>
+        {% else %}
+        <h1>Documentation</h1>
+        {% endif %}
       </div>
     </header>
 
