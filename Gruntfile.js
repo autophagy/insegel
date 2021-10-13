@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 
         shell: {
             build_docs: {
-                command: '.venv/bin/python -msphinx -Ea seonu seonu/_build/html'
+                command: '.venv/bin/python -msphinx -Ea docs docs/_build/html'
             }
         },
 
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     port: 8000,
-                    base: 'seonu/_build/html'
+                    base: 'docs/_build/html'
                 }
             }
         },
