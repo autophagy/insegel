@@ -2,19 +2,23 @@
 Insegel
 =======
 
-.. image:: http://scieldas.autophagy.io/rtd/build/insegel.png
+.. image:: https://scieldas.autophagy.io/github/workflow/status/autophagy/insegel/Build.png
+    :target: https://github.com/autophagy/insegel/actions/workflows/build.yaml
+    :alt: Build Status
+
+.. image:: https://scieldas.autophagy.io/rtd/build/insegel.png
     :target: http://insegel.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-.. image:: http://scieldas.autophagy.io/pypi/version/insegel.png
+.. image:: https://scieldas.autophagy.io/pypi/version/insegel.png
    :target: https://pypi.python.org/pypi/insegel/
    :alt: Pypi Version
 
-.. image:: http://scieldas.autophagy.io/pypi/pyversions/insegel.png
+.. image:: https://scieldas.autophagy.io/pypi/pyversions/insegel.png
    :target: https://pypi.python.org/pypi/insegel/
    :alt: Python Version
 
-.. image:: http://scieldas.autophagy.io/misc/licenses/mit.png
+.. image:: https://scieldas.autophagy.io/misc/licenses/mit.png
    :target: LICENSE
    :alt: MIT License
 

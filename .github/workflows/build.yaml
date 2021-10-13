@@ -1,0 +1,21 @@
+name: Build
+on: push
+
+jobs:
+  check-sass:
+    name: Check that Sass has been run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install -g sass
+
+      - name: Run Sass
+        run: grunt sass:dev
+
+      - name: Check that the working directly is clean (no outstanding scss changes)
+        run: git diff
