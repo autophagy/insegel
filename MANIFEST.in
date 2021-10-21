@@ -1,0 +1,11 @@
+include LICENSE
+recursive-include insegel *.conf
+recursive-include insegel *.css
+recursive-include insegel *.eot
+recursive-include insegel *.html
+recursive-include insegel *.js
+recursive-include insegel *.svg
+recursive-include insegel *.ttf
+recursive-include insegel *.woff
+recursive-include insegel *.woff2
+prune build
