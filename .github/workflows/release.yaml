@@ -60,3 +60,18 @@ jobs:
           assert version == "${{ steps.vars.outputs.tag }}"
         shell: python
 
+  publish-release:
+    name: Publish release
+    runs-on: ubuntu-latest
+    requires: [check-sass, check-docs, check-version-match]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build release
+        run: python setup.py sdist bdist_wheel
+
+      - name: Publish release to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
