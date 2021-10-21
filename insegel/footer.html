@@ -21,11 +21,7 @@
 
             {% if last_updated %}
                 <li class="footer-element">
-                    {% if theme_wending_last_updated %}
-                        {{ last_updated | wending }}
-                    {% else %}
-                        {{ last_updated }}
-                    {% endif %}
+                    {{ last_updated }}
                 </li>
             {% endif %}
         </ul>

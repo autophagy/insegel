@@ -1,9 +1,10 @@
 from io import open
 from setuptools import setup
+from insegel import __version__
 
 setup(
     name='insegel',
-    version='1.2.0',
+    version=__version__,
     url='https://github.com/autophagy/insegel',
     license='MIT',
     author='Mika Naylor (Autophagy)',
@@ -20,9 +21,6 @@ setup(
         'static/img/*.*'
     ]},
     include_package_data=True,
-    install_requires=[
-        'datarum==0.3.0'
-    ],
     entry_points = {
         'sphinx.html_themes': [
             'insegel = insegel',
