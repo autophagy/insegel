@@ -19,3 +19,19 @@ jobs:
 
       - name: Check that the working directly is clean (no outstanding scss changes)
         run: git diff
+
+  check-docs:
+    name: Check that the docs compile
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install theme
+        run: pip install -e .
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build docs
+        run: make html
+        working-directory: docs
