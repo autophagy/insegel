@@ -1,8 +1,8 @@
 import os
-from datetime import datetime
 
-__version__ = '1.2.0'
+__version__ = "1.2.0"
 __version_full__ = __version__
+
 
 def get_path():
     """
@@ -13,13 +13,13 @@ def get_path():
 
 
 def update_context(app, pagename, templatename, context, doctree):
-    context['insegel_version'] = __version_full__
+    context["insegel_version"] = __version_full__
+
 
 def setup(app):
     # add_html_theme is new in Sphinx 1.6+
-    if hasattr(app, 'add_html_theme'):
+    if hasattr(app, "add_html_theme"):
         theme_path = os.path.abspath(os.path.dirname(__file__))
-        app.add_html_theme('insegel', theme_path)
-    app.connect('html-page-context', update_context)
-    return {'version': '0.3.0',
-            'parallel_read_safe': True}
+        app.add_html_theme("insegel", theme_path)
+    app.connect("html-page-context", update_context)
+    return {"version": "0.3.0", "parallel_read_safe": True}
