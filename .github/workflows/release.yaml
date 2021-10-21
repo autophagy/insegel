@@ -63,7 +63,7 @@ jobs:
   publish-release:
     name: Publish release
     runs-on: ubuntu-latest
-    requires: [check-sass, check-docs, check-version-match]
+    needs: [check-sass, check-docs, check-version-match]
     steps:
       - uses: actions/checkout@v2
 
