@@ -1,6 +1,6 @@
 import os
 
-__version__ = "1.3.0rc2"
+__version__ = "1.3.0rc3"
 __version_full__ = __version__
 
 
