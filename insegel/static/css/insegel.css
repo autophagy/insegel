@@ -219,15 +219,8 @@ table tbody tr:nth-of-type(odd) code {
 #main-content .figure {
   text-align: center;
 }
-#main-content h1:first-child {
-  display: none;
-}
-
-#main-content-header {
-  padding: 2em 2em 0 2em;
-}
-#main-content-header h1 {
-  margin: 0;
+#main-content h1:first-of-type {
+  margin-top: 0;
 }
 
 #side-menu-container {
