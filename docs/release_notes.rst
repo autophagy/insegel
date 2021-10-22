@@ -5,6 +5,14 @@ Release Notes
 1.X
 ===
 
+1.3.0
+-----
+
+- The option to use datarum/wending dates has been removed, for dependency simplicity.
+- Added custom.css for easier third party CSS plugins.
+- Updated the layout and search pages to be more compatible with Sphinx 4.2.0.
+- Added support for not using a logo, in which case it will default to the project name.
+
 
 1.2.0
 -----
