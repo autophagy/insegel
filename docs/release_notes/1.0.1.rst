@@ -1,7 +1,0 @@
-=====
-1.0.1
-=====
-
-Release Date :: 28 Mist 227 // 18 Nov 2018
-
-- Fixed footer margins to be in line with other elements.

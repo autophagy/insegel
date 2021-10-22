@@ -19,10 +19,10 @@ Contents
 .. _release_notes:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Appendix
 
-   release_notes/index
+   release_notes
 
 .. _Sphinx: http://www.sphinx-doc.org/en/stable/
 .. _ReadTheDocs: http://readthedocs.org/

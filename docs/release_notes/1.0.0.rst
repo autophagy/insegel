@@ -1,9 +1,0 @@
-=====
-1.0.0
-=====
-
-Release Date :: 27 Mist 227 // 17 Nov 2018
-
-- Updated the theme to a cleaner, less cluttered one that matches that of `Hrǽw`_.
-
-.. _Hrǽw: https://hraew.autophagy.io/
