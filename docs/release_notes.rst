@@ -5,6 +5,15 @@ Release Notes
 1.X
 ===
 
+1.3.1
+-----
+
+- Fixed bug where page width was broken with long highlighted code (`#3`_).
+- Fixed bug where headers would be doubled when using labels (`#2`_).
+
+.. _#2: https://github.com/autophagy/insegel/issues/2
+.. _#3: https://github.com/autophagy/insegel/issues/3
+
 1.3.0
 -----
 
