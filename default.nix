@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {}
+{ pkgs ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/f790fcd0bea2ef09f436e9d8088cfe2fea2c4c12.tar.gz") {}
 , pythonPackages ? pkgs.python3Packages
 }:
 let
