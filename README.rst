@@ -23,8 +23,7 @@ Insegel
    :alt: MIT License
 
 Insegel is a theme for `Sphinx`_, intended to unify my project documentation's
-theme with that of `Hrǽw`_. The theme's documentation is available on
-`ReadTheDocs`_.
+theme with that of `Hrǽw`_. The theme's documentation is available `here`_.
 
 .. image:: docs/_static/screenshot.png
     :alt: aerende
@@ -47,4 +46,4 @@ within your documentation's ``conf.py`` file.
 
 .. _Sphinx: http://www.sphinx-doc.org/en/stable/
 .. _Hrǽw: https://github.com/Autophagy/hraew
-.. _ReadTheDocs: http://insegel.readthedocs.io
+.. _here: http://insegel.autophagy.io
