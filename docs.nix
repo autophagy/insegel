@@ -21,5 +21,6 @@ stdenv.mkDerivation {
   installPhase = ''
     mkdir -p $out
     cp -r _build/html/* $out
+    echo 'insegel.autophagy.io' > $out/CNAME
     '';
   }
