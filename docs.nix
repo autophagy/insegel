@@ -1,8 +1,6 @@
-{ pkgs ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/517850fced3b5de6693d5b49ad14e5a12d968741.tar.gz") {}
-, pythonPackages ? pkgs.python39Packages
-}:
-
 let
+  pkgs = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/517850fced3b5de6693d5b49ad14e5a12d968741.tar.gz") {};
+  pythonPackages = pkgs.python39Packages;
   inherit (pkgs) stdenv;
 in
 stdenv.mkDerivation {
