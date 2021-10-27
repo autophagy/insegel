@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2D2D2D" />
+  
+  <title>Insegel :: Configuration</title>
+  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="_static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="_static/img/favicon-16x16.png">
+  <link rel="index" title="Index" href="genindex.html"/>
+
+  <link rel="stylesheet" href="_static/css/insegel.css"/>
+  <link rel="stylesheet" href="_static/css/custom.css"/>
+
+  <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+  
+
+  <script src="https://email.tl.fortawesome.com/c/eJxNjUEOgyAQAF8jR7Kw6wIHDh7sP1Cw2mgxgmn6-3JsMqc5zEQfE8dkxOY1KKMUOI3ACFKRJpSW2AAp7ontYIaxI6i7XPJVwyeVfCQ550Os3jLrGSNOLgbdAy6s0PBk2TFNjEbsfq31LB0OnX407pJa5v2faRadwSW63mn5KuLyR9j2tgx3zecanl-55R_-jjPs"></script> 
+</head>
+
+<body>
+  <div id="insegel-container">
+    <header>
+      <div id="logo-container">
+          
+          <a href="index.html"><img src="_static/logo.svg"></a>
+          
+      </div>
+      <div id="project-container">
+        
+        <h1>Insegel Documentation</h1>
+        
+      </div>
+    </header>
+
+    <div id="content-container">
+
+      <div id="main-content-container">
+        <div id="main-content" role="main">
+          
+  <section id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
+<section id="custom-logo">
+<h2>Custom Logo<a class="headerlink" href="#custom-logo" title="Permalink to this headline">¶</a></h2>
+<p>By default, Insegel’s logo is put in the upper-left of the build documentation.
+To use a custom logo for your project, use the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_logo">html_logo</a> option in your
+<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_logo</span> <span class="o">=</span> <span class="s2">&quot;path/to/my/logo.png&quot;</span>
+</pre></div>
+</div>
+<p>The path to this new logo has to be relative to the documentation’s <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>
+file.</p>
+</section>
+<section id="custom-css">
+<h2>Custom CSS<a class="headerlink" href="#custom-css" title="Permalink to this headline">¶</a></h2>
+<p>If you need to modify Insegel’s default CSS style, you can provide a custom CSS
+stylesheet. To do this, create a folder named <code class="docutils literal notranslate"><span class="pre">css</span></code> with a file in it named
+<code class="docutils literal notranslate"><span class="pre">custom.css</span></code>. This folder can be anywhere, but is conventionally in the <code class="docutils literal notranslate"><span class="pre">_static</span></code>
+folder. Then, set the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path">html_static_path</a> option in your configuration file to
+the path to the folder that contains <code class="docutils literal notranslate"><span class="pre">css/custom.css</span></code>.</p>
+<p>For example, if the structure was <code class="docutils literal notranslate"><span class="pre">_static/css/custom.css</span></code> then your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>
+file would contain:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_static&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="sidebar-depth">
+<h2>Sidebar Depth<a class="headerlink" href="#sidebar-depth" title="Permalink to this headline">¶</a></h2>
+<p>By default, the theme displays indexes 3 levels deep. To configure this to fewer
+levels:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;navigation_depth&#39;</span><span class="p">:</span> <span class="mi">1</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+        </div>
+      </div>
+
+      <div id="side-menu-container">
+
+        <div id="search" role="search">
+        <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+            <input type="text" name="q" placeholder="Search..." />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+        </form>
+</div>
+
+        <div id="side-menu" role="navigation">
+
+          
+  
+    
+  
+  
+    <p class="caption"><span class="caption-text">Using The Theme</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#via-pypi">Via PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#via-nixpkgs">Via Nixpkgs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#custom-logo">Custom Logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-css">Custom CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sidebar-depth">Sidebar Depth</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="release_notes.html#x">1.X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release_notes.html#id10">0.X</a></li>
+</ul>
+</li>
+</ul>
+
+  
+
+
+        </div>
+
+        
+
+      </div>
+
+    </div>
+
+<footer>
+    <div id="footer-info">
+        <ul id="build-details">
+            
+                <li class="footer-element">
+                    
+                        <a href="_sources/configuration.rst.txt" rel="nofollow"> source</a>
+                    
+                </li>
+            
+
+            
+
+            
+                <li class="footer-element">
+                    01 Jan 1980
+                </li>
+            
+        </ul>
+
+        
+
+        <div id="credit">
+            created with <a href="http://sphinx-doc.org/">Sphinx</a> and <a href="https://github.com/Autophagy/insegel">Insegel</a>
+
+        </div>
+    </div>
+
+    <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
+
+    <script type="text/javascript">
+      $("#menu-toggle").click(function() {
+        $("#menu-toggle").toggleClass("toggled");
+        $("#side-menu-container").slideToggle(300);
+      });
+    </script>
+
+</footer> 
+
+</div>
+
+</body>
+</html>
