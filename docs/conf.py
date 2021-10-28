@@ -23,3 +23,5 @@ extensions = ["sphinx.ext.autodoc"]
 html_theme_options = {"navigation_depth": 2}
 
 html_logo = "_static/logo.svg"
+
+html_last_updated_fmt = None
