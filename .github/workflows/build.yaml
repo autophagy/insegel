@@ -33,11 +33,13 @@ jobs:
           name: autophagy
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
       - run: nix-build docs.nix
-      - uses: peaceiris/actions-gh-pages@v3
+      - uses: peaceiris/actions-gh-pages@v3.7.3
         if: ${{ github.ref == 'refs/heads/master' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./result
+          cname: insegel.autophagy.io
+
 
   nix-build:
     name: Nix build
