@@ -6,7 +6,7 @@ templates_path = ["_templates"]
 source_suffix = ".rst"
 master_doc = "index"
 
-project = u"Insegel"
+project = "Insegel"
 
 exclude_patterns = ["_build"]
 
@@ -20,7 +20,7 @@ releases_unstable_prehistory = True
 
 extensions = ["sphinx.ext.autodoc"]
 
-html_theme_options = {"navigation_depth": 2}
+html_theme_options = {"navigation_depth": 2, "local_toc": True}
 
 html_logo = "_static/logo.svg"
 

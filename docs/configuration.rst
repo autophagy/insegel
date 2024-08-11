@@ -39,6 +39,15 @@ levels::
         'navigation_depth': 1
     }
 
+Local TOC
+=========
+
+By default, the theme displays a local TOC, built from each documents headings and subheadings::
+
+    html_theme_options = {
+        'local_toc': True
+    }
+
 
 .. _html_logo: https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_logo
 .. _html_static_path: https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path

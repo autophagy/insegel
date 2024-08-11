@@ -5,6 +5,11 @@ Release Notes
 1.X
 ===
 
+1.4.0
+-----
+
+- Added a right sidebar, which holds a local TOC (toggleable).
+
 1.3.1
 -----
 
